@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :quotes
   # Defines the root path route ("/")
-  root "quotes#index"
+  root to: "pages#home"
 end
