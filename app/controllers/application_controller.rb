@@ -10,13 +10,7 @@ class ApplicationController < ActionController::Base
     end
   
     def current_company
-      if user_signed_in?
-        #debugger
-        #p current_user.company
-        @current_company ||= current_user.company
-      end
-
-      #@current_company ||= current_user.company if user_signed_in?
+      @current_company ||= current_user.company if user_signed_in?
     end
     helper_method :current_company
 end
