@@ -1,7 +1,7 @@
 <%= turbo_stream_from current_company, "quotes" %>
 
 <div class="container">
-  <%= turbo_frame_tag "first_turbo_frame" do %>
+ <%= turbo_frame_tag "first_turbo_frame" do %> 
     <div class="header">
       <h1>Quotes</h1>
       <%= link_to "New quote",
@@ -9,8 +9,7 @@
                   class: "btn btn--primary",
                   data: { turbo_frame: dom_id(Quote.new) } %>
     </div>
-  <% end %>
-
+  <% end %> 
   <%= turbo_frame_tag Quote.new %>
   <%= turbo_frame_tag "quotes" do %>
     <%= render @quotes %>
