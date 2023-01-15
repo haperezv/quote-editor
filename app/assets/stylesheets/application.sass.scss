@@ -15,7 +15,7 @@
 @import "components/quote";
 @import "components/navbar";
 @import "components/flash";
-@import "config/animations";
+@import "components/empty_state";
 
 
 // Layouts
@@ -26,7 +26,8 @@
 @import "components/btn";
 @import "components/btn";
 
-// All the previous code
+//Animations
+@import "config/animations";
 
 
 
